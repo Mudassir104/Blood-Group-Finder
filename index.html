@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/bootsrap 4.5.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.css" />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/" />
+    <script src="JS/jquery-3.4.1.min.js"></script>
+    <script src="JS/popper.min.js"></script>
+    <script src="JS/bootstrap.js"></script>
+    <title>Blood Group Finder</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="container">
+        <button
+          type="button"
+          class="btn btn-primary"
+          data-toggle="modal"
+          data-target="#myModal"
+          id="Modalboxbtn"
+        >
+          Add a Blood Group
+        </button>
+        <h3>Blood Groups That are available in Khanoo Wala...</h3>
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  Submit Your Form To Add Your Blood Group.
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="" class="form-inline pt-3">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="name-input"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Father Name"
+                    name="S/O-name-input"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    name="Ph-number-input"
+                    class="form-control"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Blood Group"
+                    name="Blood-group-input"
+                    class="form-control"
+                  />
+                  <button type="submit" class="ms-auto mt-3">Submit</button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <table class="table">
+          <tr id="tr-head">
+            <th>Name</th>
+            <th>Father Name</th>
+            <th>Phone Number</th>
+            <th>Blood Group</th>
+          </tr>
+          <tr>
+            <td id="name">Mudassir Ameen</td>
+            <td id="S/O-name">Ameen Khan</td>
+            <td id="Ph-Number">03064121754</td>
+            <td id="Blood-group">A+</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <script src="js/style.js"></script>
+  </body>
+</html>
