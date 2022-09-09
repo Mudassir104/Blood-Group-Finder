@@ -20,11 +20,77 @@
         <button
           type="button"
           class="btn btn-primary"
-          onclick="addBloodGroup(), tableValues()"
+          data-toggle="modal"
+          data-target="#myModal"
+          id="Modalboxbtn"
         >
           Add a Blood Group
         </button>
         <h3>Blood Groups That are available in Khanoo Wala...</h3>
+        <div class="modal" id="myModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h4 class="modal-title">
+                  Submit Your Form To Add Your Blood Group.
+                </h4>
+                <button type="button" class="close" data-dismiss="modal">
+                  &times;
+                </button>
+              </div>
+              <div class="modal-body">
+                <form action="" class="form-inline pt-3">
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    name="name-input"
+                    class="form-control"
+                    id="nameInput"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Father Name"
+                    name="S/O-name-input"
+                    class="form-control"
+                    id="fatherInput"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Phone Number"
+                    name="Ph-number-input"
+                    class="form-control"
+                    id="phoneInput"
+                  />
+                  <input
+                    type="text"
+                    placeholder="Blood Group"
+                    name="Blood-group-input"
+                    class="form-control"
+                    id="bloodInput"
+                  />
+                  <button
+                    type="submit"
+                    class="mt-3"
+                    id="submit-btn"
+                    class="close"
+                    data-dismiss="modal"
+                  >
+                    Submit
+                  </button>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-danger"
+                  data-dismiss="modal"
+                >
+                  Close
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
         <table class="table" id="myTable">
           <tr id="tr-head">
             <th>Name</th>

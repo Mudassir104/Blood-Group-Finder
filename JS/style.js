@@ -1,11 +1,13 @@
+document.getElementById("submit-btn").addEventListener("click", addBloodGroup);
+document.getElementById("submit-btn").addEventListener("click", tableValues);
 var ary = new Array(4);
 
 function addBloodGroup() {
   for (let getValues = 0; getValues < 1; getValues++) {
-    ary[0] = prompt("Enter Your Name : ");
-    ary[1] = prompt("Enter Your Father Name : ");
-    ary[2] = prompt("Enter Your Phone Number : ");
-    ary[3] = prompt("Enter Your Blood Group : ");
+    ary[0] = document.getElementById("nameInput").value;
+    ary[1] = document.getElementById("fatherInput").value;
+    ary[2] = document.getElementById("phoneInput").value;
+    ary[3] = document.getElementById("bloodInput").value;
   }
 }
 

@@ -1,79 +1,84 @@
 /* Body CSS */
-body{
-    background-color: lightsalmon;
+body {
+  background-color: lightsalmon;
 }
-.container-fluid{
-     background-color: transparent;
+.container-fluid {
+  background-color: transparent;
 }
-
 
 /* Form CSS */
-#Modalboxbtn{
-    margin: 10px auto 10px auto;
-    display: flex;
+#Modalboxbtn {
+  margin: 10px auto 10px auto;
+  display: flex;
 }
-#form{
+/* #form{
     background-color:  white;
     padding: 2rem;
+} */
+.form-control {
+  width: 100%;
 }
-.form-control{
-    width: 100%;
+.form-control:focus {
+  outline: none;
+  box-shadow: none;
 }
-.form-control:focus{
-    outline: none;
-    box-shadow: none;
+.form-control:not(first-child) {
+  margin-left: 5px;
 }
-.form-control:not(first-child){
-    margin-left: 5px;
+.modal-body input {
+  margin: 0 auto 4px auto;
+  background-color: rgb(239, 113, 113);
+  border-color: rgb(112, 157, 87);
+  padding: 10px 0 10px 10px;
+  color: antiquewhite;
+  border-radius: 10px;
 }
-.modal-body .form-inline input{
-    margin: 0 auto 4px auto;
-    background-color: rgb(239, 113, 113);
-    border-color:  rgb(112, 157, 87);
-    padding: 10px 0 10px 10px;
-    color: antiquewhite;
-    border-radius: 10px;
-}
-.modal-body .form-inline button
-{
-    width: 200px;
-    margin: 0 auto 0 auto;
-    background-color: rgb(239, 113, 113);
-    border-color:  rgb(112, 157, 87);
-    padding: 10px 0 10px 0;
-    color: antiquewhite;
-    border-radius: 10px;
+.modal-body button {
+  width: 200px;
+  display: flex;
+  margin-left: auto;
+  background-color: rgb(239, 113, 113);
+  border-color: rgb(112, 157, 87);
+  padding: 10px 0 10px 0;
+  color: antiquewhite;
+  border-radius: 10px;
+  flex-direction: column-reverse;
+  flex-wrap: nowrap;
+  align-content: space-around;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: auto;
 }
 /* Table CSS */
-table{
-    margin-top: 5px;
+table {
+  margin-top: 5px;
 }
-.table tr{
-    transition: 1s;
+.table tr {
+  transition: 1s;
 }
-.table tr:nth-child(even){
-    background-color: white;
+.table tr:nth-child(even) {
+  background-color: white;
 }
-.table tr:nth-child(odd){
-    background-color: lightgray;
+.table tr:nth-child(odd) {
+  background-color: lightgray;
 }
-.table tr:hover{
-    background-color: lightcoral;
-    color: darkblue;
-    text-transform: uppercase;
+.table tr:hover {
+  background-color: lightcoral;
+  color: darkblue;
+  text-transform: uppercase;
 }
-#tr-head{
-    background-color: gray;
-    color: aliceblue;
+#tr-head {
+  background-color: gray;
+  color: aliceblue;
 }
-#tr-head>th{
-    border: 2px solid black;
-    /* border-top: none; */
-    border-bottom: none;
-    cursor:default;
+#tr-head > th {
+  border: 2px solid black;
+  /* border-top: none; */
+  border-bottom: none;
+  cursor: default;
 }
-.table tr td{
-    border: 2px solid black;
-    cursor:default;
+.table tr td {
+  border: 2px solid black;
+  cursor: default;
 }
 /* Table CSS End */
